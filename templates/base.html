@@ -36,22 +36,26 @@
 <body>
     {% include 'menu.html'%}
 
-    {% block content %}
-    <div class="ui grid intro">
-        <div class="row">
-            <div class="column center aligned">
-                {% if WELCOME_MESSAGE %}
-                <h1>{{ WELCOME_MESSAGE }}</h1>
-                {% else %}
-                <h1>Welcome to {{ SITENAME }}</h1>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-    <div class="ui grid main container">
-        {% include 'article_list.html' %}
-    </div>
-    {% endblock %}
+<div class="ui main text container">
+  {% block content %}
+  <div class="ui grid intro">
+      <div class="row">
+          <div class="column center aligned">
+              {% if WELCOME_MESSAGE %}
+              <h1>{{ WELCOME_MESSAGE }}</h1>
+              {% else %}
+              <h1>Welcome to {{ SITENAME }}</h1>
+              {% endif %}
+          </div>
+      </div>
+  </div>
+  <div class="ui grid main container">
+      {% include 'article_list.html' %}
+  </div>
+
+  {% endblock %}
+</div>
+
 
     {% include 'footer.html'%}
     <script type="text/javascript" src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
