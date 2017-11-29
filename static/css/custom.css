@@ -2,8 +2,7 @@ body {
     background-color: #FFFFFF;
 }
 .main.container {
-    margin-top: 8em;
-	min-height: 600px;
+  margin-top: 8em;
 }
 
 .intro {
