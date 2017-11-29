@@ -8,6 +8,20 @@
             {% endif %}
             {{ SITENAME }}
         </a>
+
+        <div class="ui simple dropdown item">
+          <a href="/palvelut/" class="item">Palvelut</a>
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <a href="/palvelut/ohjelmointi" class="item">Ohjelmointi</a>
+            <a href="/yritys/suunnittelu" class="item">Suunnittelu</a>
+          </div>
+        </div>
+        <a href="/yritys/" class="item">Yritys</a>
+        <a href="/blogi/" class="item">Blogi</a>
+
+
+
         {% for item, url in MENU_LINKS %}
         <a href="{{ url }}" class="item">{{ item }}</a>
         {% endfor %}
